@@ -1,0 +1,7 @@
+<ul>
+    {% for item in item_list %}
+    <a href="{%url 'myapp:detail' item.id %}">
+        <li>{{ item.item_name }}</li>
+    </a>
+    {% endfor %}
+</ul>
