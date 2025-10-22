@@ -1,7 +1,23 @@
-<ul>
+{% extends 'myapp/base.html' %}
+{% block body %}
+
+<div class="">
     {% for item in item_list %}
-    <a href="{%url 'myapp:detail' item.id %}">
-        <li>{{ item.item_name }}</li>
-    </a>
+    <div class="flex w-1/2 mx-auto py-5">
+        <div>
+            <h1 ><img class="w-64 rounded-lg" src="{{item.item_image}}" alt="placeholder"></h1>
+        </div>
+        <div class="mx-auto space-y-4 py-4">
+            <div class="font-bold text-4xl">{{ item.item_name }}</div>
+            <div>{{ item.item_desc }}</div>
+            <div class="font-bold text-green-500 text-2xl">₹{{ item.item_price }}</div>
+        </div>
+        <div class="py-4">
+            <a class="bg-red-500 text-white px-5 py-2 rounded-xl" href="{%url 'myapp:detail' item.id %}">Veiw details</a>
+        </div>
+    </div>
+    
     {% endfor %}
-</ul>
+</div>
+
+{% endblock %}
