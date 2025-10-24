@@ -12,8 +12,8 @@
             <div>{{item.item_desc}}</div>
             
             <div class="my-4">
-                <a class="px-3 py-1 bg-yellow-500 rounded-md" href="">Edit</a>
-                <a class="m-2 px-3 py-1 bg-red-400 text-white rounded-md" href="">Delete</a>
+                <a class="px-3 py-1 bg-yellow-500 rounded-md" href="{% url 'myapp:update_item' item.id %}">Edit</a>
+                <a class="m-2 px-3 py-1 bg-red-400 text-white rounded-md" href="{% url 'myapp:delete_item' item.id %}">Delete</a>
             </div>
         </div>
     </div>
