@@ -2,7 +2,9 @@ from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from .models import Item
 from .forms import Itemform
-# Create your views here.
+from django.contrib.auth.decorators import login_required
+
+@login_required
 def index(request):
     #getting items from database
     item_list = Item.objects.all()

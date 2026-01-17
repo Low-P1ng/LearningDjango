@@ -9,14 +9,24 @@
 <body>
     <nav class="bg-blue-400 text-white">
         <div class="flex justify-between px-2 py-4">
-            <a  class="font-bold text-2xl" href="">Food App</a>
+            <a  class="font-bold text-2xl" href="{% url 'myapp:index' %}">Food App</a>
             <div class="space-x-5">
-                <a href="">Contact</a>
-                <a href="">Address</a>
-                <a href="">About Us</a>
+                <a href="{% url 'users:profile' %}">Welcome {{user.username}}</a>
+                {% if user.is_authenticated %}
+                    <a href="{% url 'users:logout' %}">Logout</a>
+                {% else %}
+                    <a href="{% url 'users:login' %}">Login</a>
+                {% endif %}
             </div>
         </div>
     </nav>
+    {% if messages %}
+    {% for message in messages%}
+        <div class="bg-green-300 text-green-700">
+            {{message}}
+        </div>
+    {% endfor %}
+    {% endif %}
     {% block body%}
     {% endblock %}
 </body>
