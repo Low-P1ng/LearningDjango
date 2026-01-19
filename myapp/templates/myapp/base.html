@@ -9,7 +9,10 @@
 <body>
     <nav class="bg-blue-400 text-white">
         <div class="flex justify-between px-2 py-4">
-            <a  class="font-bold text-2xl" href="{% url 'myapp:index' %}">Food App</a>
+            <div>
+                <a  class="font-bold text-2xl" href="{% url 'myapp:index' %}">Food App</a>
+                <a  href="{% url 'myapp:create_item' %}">Add item</a>
+            </div>
             <div class="space-x-5">
                 <a href="{% url 'users:profile' %}">Welcome {{user.username}}</a>
                 {% if user.is_authenticated %}
