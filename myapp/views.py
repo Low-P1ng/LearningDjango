@@ -7,18 +7,24 @@ from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
+from django.core.paginator import Paginator
+from django.views.decorators.cache import cache_page
 
 
 #@login_required
-#def index(request):
-#    #getting items from database
-#    item_list = Item.objects.all()
-#    #creating context
-#    context={
-#        'item_list':item_list
-#    }
-#   # passing the context object to the render method along the template
-#    return render(request,"myapp/index.html",context)
+# @cache_page(60 * 10)
+def index(request):
+   #getting items from database
+   item_list = Item.objects.all()
+   paginator = Paginator(item_list, 5)
+   page_number = request.GET.get("page")
+   page_obj = paginator.get_page(page_number)
+   #creating context
+   context={
+       'page_obj':page_obj
+   }
+  # passing the context object to the render method along the template
+   return render(request,"myapp/index.html",context)
 
 #def detail(request,id):
 #    #created a detailed veiw for each item
@@ -61,10 +67,10 @@ from django.urls import reverse_lazy
     
 #     return render(request, "myapp/item-delete.html")
 
-class IndexClassView(ListView):
-    model=Item
-    template_name="myapp/index.html"
-    context_object_name="item_list"
+# class IndexClassView(ListView):
+#     model=Item
+#     template_name="myapp/index.html"
+#     context_object_name="item_list"
     
 
 class FoodDetail(DetailView):

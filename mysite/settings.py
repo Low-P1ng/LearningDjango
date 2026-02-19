@@ -45,6 +45,9 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'myapp.middleware.BlockIPMiddleware',
+    'myapp.middleware.LogRequestMiddleware',
+    'myapp.middleware.TimerMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -148,3 +151,10 @@ LOGIN_URL= 'users:login'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'pictures')
 MEIDA_URL = ('/pictures/')
+
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.filebased.FileBasedCache",
+        "LOCATION": BASE_DIR / "cache",    
+    }
+}

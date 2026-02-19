@@ -3,7 +3,7 @@
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto py-10">
 
-    {% for item in item_list %}
+    {% for item in page_obj %}
     <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
 
         <!-- Image -->
@@ -29,6 +29,35 @@
 
     </div>
     {% endfor %}
+
+</div>
+<div class="flex items-center justify-center gap-4 mt-8">
+
+    {% if page_obj.has_previous %}
+        <a href="?page={{ page_obj.previous_page_number }}"
+           class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition">
+            ← Previous
+        </a>
+    {% else %}
+        <span class="px-4 py-2 bg-gray-100 text-gray-400 rounded-lg cursor-not-allowed">
+            ← Previous
+        </span>
+    {% endif %}
+
+    <span class="px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium">
+        Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+    </span>
+
+    {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}"
+           class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition">
+            Next →
+        </a>
+    {% else %}
+        <span class="px-4 py-2 bg-gray-100 text-gray-400 rounded-lg cursor-not-allowed">
+            Next →
+        </span>
+    {% endif %}
 
 </div>
 
