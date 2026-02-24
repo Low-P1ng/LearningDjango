@@ -47,19 +47,19 @@ def detail(request,id):
     }
     return render(request,"myapp/detail.html",context)
 
-# def create_item(request):
-#     form= Itemform(request.POST or None)
+def create_item(request):
+    form= Itemform(request.POST or None)
     
-#     if request.method=="POST":
-#         if form.is_valid():
-#             form.save()
-#             return redirect('myapp:index')
+    if request.method=="POST":
+        if form.is_valid():
+            form.save()
+            return redirect('myapp:index')
     
-#     #using the form here to render veiw
-#     context = {
-#         'form':form
-#     }
-#     return render(request, "myapp/item-form.html", context)
+    #using the form here to render veiw
+    context = {
+        'form':form
+    }
+    return render(request, "myapp/item_form.html", context)
 
 # def update_item(request,id):
 #     item = Item.objects.get(id=id)
@@ -91,13 +91,13 @@ def detail(request,id):
 #     template_name="myapp/detail.html"
 #     context_object_name="item"
 
-class ItemCreateView(CreateView):
-    #item_form.html
-    model=Item
-    fields=['item_name', 'item_desc', 'item_price', 'item_image']
-    def form_valid(self, form):
-        form.instance.user_name = self.request.user
-        return super().form_valid(form)
+# class ItemCreateView(CreateView):
+#     #item_form.html
+#     model=Item
+#     fields=['item_name', 'item_desc', 'item_price', 'item_image']
+#     def form_valid(self, form):
+#         form.instance.user_name = self.request.user
+#         return super().form_valid(form)
     
 
 class ItemUpdateView(UpdateView):

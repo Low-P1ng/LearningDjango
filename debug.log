@@ -1,3 +1,849 @@
 Fetching an item with id:4
 User newadminuser requested item from 127.0.0.1
 Item found Chicken Tacos
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /favicon.ico
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /favicon.ico
+Fethcing all items from the database.
+There are 19 items.
+Not Found: /favicon.ico
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /apple-touch-icon.png
+Fethcing all items from the database.
+There are 19 items.
+Not Found: /myapp/null
+Fethcing all items from the database.
+There are 19 items.
+Fethcing all items from the database.
+There are 19 items.
+Fethcing all items from the database.
+There are 19 items.
+Internal Server Error: /myapp/
+Traceback (most recent call last):
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/suryanamdev/Desktop/pro/mysite/myapp/views.py", line 31, in index
+    return render(request,"myapp/index.html",context)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+        (
+    ...<2 lines>...
+        )
+    )
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 489, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 710, in __init__
+    raise TemplateSyntaxError(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' | "d M Y"' from 'item.created_at | "d M Y"'
+Fethcing all items from the database.
+There are 19 items.
+Internal Server Error: /myapp/
+Traceback (most recent call last):
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/suryanamdev/Desktop/pro/mysite/myapp/views.py", line 31, in index
+    return render(request,"myapp/index.html",context)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+        (
+    ...<2 lines>...
+        )
+    )
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 489, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 710, in __init__
+    raise TemplateSyntaxError(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' | "d M Y"' from 'item.created_at | "d M Y"'
+Fethcing all items from the database.
+There are 19 items.
+Internal Server Error: /myapp/
+Traceback (most recent call last):
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/suryanamdev/Desktop/pro/mysite/myapp/views.py", line 31, in index
+    return render(request,"myapp/index.html",context)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+        (
+    ...<2 lines>...
+        )
+    )
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 489, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 710, in __init__
+    raise TemplateSyntaxError(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' "d M Y"' from 'item.created_at | date "d M Y"'
+Fethcing all items from the database.
+There are 19 items.
+Internal Server Error: /myapp/
+Traceback (most recent call last):
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/suryanamdev/Desktop/pro/mysite/myapp/views.py", line 31, in index
+    return render(request,"myapp/index.html",context)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+        (
+    ...<2 lines>...
+        )
+    )
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 489, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 710, in __init__
+    raise TemplateSyntaxError(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ': "d M Y"' from 'item.created_at | date: "d M Y"'
+Fethcing all items from the database.
+There are 19 items.
+Internal Server Error: /myapp/
+Traceback (most recent call last):
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/suryanamdev/Desktop/pro/mysite/myapp/views.py", line 31, in index
+    return render(request,"myapp/index.html",context)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+        (
+    ...<2 lines>...
+        )
+    )
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 489, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 710, in __init__
+    raise TemplateSyntaxError(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ': "d M Y"' from 'item.created_at | date: "d M Y"'
+Fethcing all items from the database.
+There are 19 items.
+Fethcing all items from the database.
+There are 19 items.
+Fethcing all items from the database.
+There are 19 items.
+Internal Server Error: /myapp/
+Traceback (most recent call last):
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/suryanamdev/Desktop/pro/mysite/myapp/views.py", line 31, in index
+    return render(request,"myapp/index.html",context)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+        (
+    ...<2 lines>...
+        )
+    )
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 489, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'currency'
+Watching for file changes with StatReloader
+Fethcing all items from the database.
+There are 19 items.
+Internal Server Error: /myapp/
+Traceback (most recent call last):
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/suryanamdev/Desktop/pro/mysite/myapp/views.py", line 31, in index
+    return render(request,"myapp/index.html",context)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+        (
+    ...<2 lines>...
+        )
+    )
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 489, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'currency'
+Fethcing all items from the database.
+There are 19 items.
+Internal Server Error: /myapp/
+Traceback (most recent call last):
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/suryanamdev/Desktop/pro/mysite/myapp/views.py", line 31, in index
+    return render(request,"myapp/index.html",context)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+        (
+    ...<2 lines>...
+        )
+    )
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 489, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'currency'
+Fethcing all items from the database.
+There are 19 items.
+Internal Server Error: /myapp/
+Traceback (most recent call last):
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/suryanamdev/Desktop/pro/mysite/myapp/views.py", line 31, in index
+    return render(request,"myapp/index.html",context)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+        (
+    ...<2 lines>...
+        )
+    )
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 489, in parse
+    raise self.error(token, e)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'currency'
+Fethcing all items from the database.
+There are 19 items.
+/Users/suryanamdev/Desktop/pro/mysite/myapp/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp/add/
+Traceback (most recent call last):
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: The view myapp.views.create_item didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /myapp/add/
+Traceback (most recent call last):
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: The view myapp.views.create_item didn't return an HttpResponse object. It returned None instead.
+/Users/suryanamdev/Desktop/pro/mysite/myapp/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /myapp/add/
+Traceback (most recent call last):
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/suryanamdev/Desktop/pro/mysite/myapp/views.py", line 62, in create_item
+    return render(request, "myapp/item-form.html", context)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp/item-form.html
+Internal Server Error: /myapp/add/
+Traceback (most recent call last):
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/suryanamdev/Desktop/pro/mysite/myapp/views.py", line 62, in create_item
+    return render(request, "myapp/item-form.html", context)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/suryanamdev/Desktop/pro/env/lib/python3.13/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp/item-form.html
+/Users/suryanamdev/Desktop/pro/mysite/myapp/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+Fethcing all items from the database.
+There are 20 items.
+Fethcing all items from the database.
+There are 20 items.
+Fethcing all items from the database.
+There are 20 items.
+Fethcing all items from the database.
+There are 21 items.
+Fethcing all items from the database.
+There are 21 items.
+Fethcing all items from the database.
+There are 21 items.
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+Fethcing all items from the database.
+There are 21 items.
+Not Found: /myapp/item/
+Fethcing all items from the database.
+There are 19 items.
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/suryanamdev/Desktop/pro/mysite/myapp/forms.py changed, reloading.
+Watching for file changes with StatReloader

@@ -7,7 +7,7 @@ app_name='myapp'
 urlpatterns = [
     path('',views.index, name='index'),
     path('<int:id>/',views.detail, name='detail'),
-    path('add/',views.ItemCreateView.as_view(), name='create_item'),
+    path('add/',views.create_item, name='create_item'),
     path('update/<int:pk>/',views.ItemUpdateView.as_view(), name='update_item'),
     path('delete/<int:pk>/',views.DeleteItemView.as_view(), name='delete_item'),
 ]
